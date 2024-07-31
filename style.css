@@ -23,7 +23,67 @@
 }
 
 html {
-    background-color: var(--my-background-main);
-    color: var(--my-foreground-main);
+    background-color: var(--my-foreground-main);
+    color: var(--my-background-main);
     font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    max-width: 62.5rem;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--my-foreground-mid);
+    z-index: 1;
+    padding: 1.5rem;
+    margin: auto -1rem;
+    max-width: 62.5rem;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 1rem;
+}
+
+nav {
+    display: inline;
+    float: right;
+    height: 100%;
+    margin-right: 2.5rem;
+}
+
+nav a {
+    margin-right: 1rem;
+}
+
+main {
+    margin: 70px auto auto;
+    padding: 0 2.5rem;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+#about-me {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-text-container {
+    max-width: 40rem;
+}
+
+.profile-photo {
+    max-width: 25rem;
+    align-self: center;
+}
+
+.profile-photo img {
+    max-width: 100%;
+    height: auto;
 }
