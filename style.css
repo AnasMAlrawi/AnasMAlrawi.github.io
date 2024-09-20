@@ -22,68 +22,79 @@
     --my-lavender: #5865f2;
 }
 
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
+}
+
+* {
+    border: 1px solid red;
+}
+
 html {
-    background-color: var(--my-foreground-main);
-    color: var(--my-background-main);
     font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-    max-width: 62.5rem;
-    margin: auto;
+    min-height: 100vh;
+    min-width: 320px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: var(--my-foreground-mid);
+#background {
+    background-image: linear-gradient(var(--my-foreground-main), var(--my-light-highlight));
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-box {
     z-index: 1;
-    padding: 1.5rem;
-    margin: auto -1rem;
-    max-width: 62.5rem;
-}
-
-header h1 {
-    display: inline;
-    margin-left: 1rem;
-}
-
-nav {
-    display: inline;
-    float: right;
-    height: 100%;
-    margin-right: 2.5rem;
-}
-
-nav a {
-    margin-right: 1rem;
+    max-width: 100%;
+    flex: 0 0;
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    transition: opacity 0.5s ease-in-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
-    margin: 70px auto auto;
-    padding: 0 2.5rem;
+    width: 60rem;
+    max-width: 100%;
+    position: relative;
+    padding: 0 3rem;
 }
 
-section {
-    padding: 1rem 0;
+main section {
+    transition: opacity 0.75s ease-in-out 0.375s,min-height 0.375s ease-in-out, max-height 0.375s ease-in-out;
 }
 
-#about-me {
+main header {
+    transition: opacity 0.375s ease-in-out 0.5625s, visibility 0.375s linear 0.5625s;
+}
+
+.flex-container {
     display: flex;
     justify-content: space-between;
 }
 
-.about-me-text-container {
-    max-width: 40rem;
+.flex-container div {
+    max-width: 50%;
 }
 
-.profile-photo {
-    max-width: 25rem;
-    align-self: center;
-}
-
-.profile-photo img {
+img {
     max-width: 100%;
-    height: auto;
 }

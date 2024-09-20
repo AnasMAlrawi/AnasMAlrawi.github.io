@@ -8,44 +8,28 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
-        <header>
-            <h1 class="header-name">Anas Al-rawi</h1>
-            <nav>
-                    <a href="#about-me" class="nav-link">About Me</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#contact-info" class="nav-link">Contact Info</a>
-            </nav>
-        </header>
-        <main>
-            <section id="about-me">
-                <div class="about-me-text-container">
-                    <h2 class="section-title">About Me</h2>
-                    <p>I am an aspiring software developer.</p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <figure class="profile-photo">
-                    <img src="./resources/profile_photo_main.jpg" alt="Anas Al-rawi">
-                    <figcaption>Anas Al-rawi</figcaption>
-                </figure>
-            </section>
-            <section id="projects">
-                <h2 class="section-title">Projects</h2>
-                <ul class="projecct-list">
-                    <li><a href="https://github.com/AnasMAlrawi/mixed_messages_omikuji" target="_blank">Project 1</a></li>
-                </ul>
-            </section>
-            <section id="skills">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-container"></div>
-            </section>
-            <section id="contact-info">
-                <h2 class="section-title">Contact Info</h2>
-                <div class="contact-container"></div>
-            </section>
-        </main>
-        <footer></footer>
+        <div id="background">
+            <div id="content-box">
+                <main>
+                    <header class="inactive"></header>
+                    <section id="home-page" class="active">
+                        <div id="home-content-container">
+                            <div class="flex-container">
+                                <div class="left">
+                                    <h2>Anas Al-rawi</h2>
+                                    <p>Full Stack Developer</p>
+                                </div>
+                                <div class="right">
+                                    <img src="./resources/profile_photo_main.jpg" alt="Anas Al-rawi">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="home-buttons-container"></div>
+                    </section>
+                    <section id="projects-page" class="inactive"></section>
+                    <section id="contact-me-page" class="inactive"></section>
+                </main>
+            </div>
+        </div>
     </body>
 </html>
