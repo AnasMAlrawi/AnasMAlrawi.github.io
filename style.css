@@ -52,7 +52,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    padding: 6rem;
+    padding: 1rem 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,21 +80,56 @@ main {
 
 main section {
     transition: opacity 0.75s ease-in-out 0.375s,min-height 0.375s ease-in-out, max-height 0.375s ease-in-out;
+    padding: 0;
 }
 
 main header {
     transition: opacity 0.375s ease-in-out 0.5625s, visibility 0.375s linear 0.5625s;
 }
 
-.flex-container {
+#home-content-container {
+    border: 2px solid var(--my-dark-highlight);
+    background-color: var(--my-foreground-mid);
+}
+
+.home-content-flex-container {
     display: flex;
     justify-content: space-between;
 }
 
-.flex-container div {
+.home-content-flex-container div {
     max-width: 50%;
+    flex: 1 1;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.frame {
+    max-width: 100% !important;
+    max-height: 100% !important; 
+    padding: 1rem;
+    background-color: var(--my-dark-highlight);
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#home-buttons-container {
+    background-color: var(--my-foreground-dark);
+}
+
+.home-button-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto 12rem;
+}
+
+.home-button {
+    font-size: 1.5rem;
 }
