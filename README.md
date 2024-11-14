@@ -2,9 +2,7 @@
 
 A website containing my (Anas Al-rawi's) personal portfolio
 
-## Description
-
-An in-depth paragraph about your project and overview of use.
+> This is a **work in progress**
 
 ## Technologies
 
@@ -14,7 +12,7 @@ An in-depth paragraph about your project and overview of use.
 
 ### How To Use
 
-* visit [insertWebsiteAddressHere](https://example.com)
+visit [https://anasmalrawi.github.io](https://anasmalrawi.github.io)
 
 ## Authors
 
