@@ -11,8 +11,14 @@
         <div id="background">
             <div id="content-box">
                 <main>
-                    <header class="inactive"></header>
-                    <section id="home-page" class="active">
+                    <header class="active">
+                        <nav>
+                            <button id="nav-home-button" class="nav-button active">Home</button>
+                            <button id="nav-projects-button" class="nav-button active">Projects</button>
+                            <button id="nav-contact-button" class="nav-button inactive">Contact</button>
+                        </nav>
+                    </header>
+                    <section id="home-page" class="inactive">
                         <div id="home-content-container">
                             <div class="home-content-flex-container">
                                 <div class="left">
@@ -34,8 +40,18 @@
                             </div>
                         </div>
                     </section>
-                    <section id="projects-page" class="inactive"></section>
-                    <section id="contact-me-page" class="inactive"></section>
+                    <section id="projects-page" class="inactive">
+                        <div><p>git hub</p></div>
+                        <div class="projects-container">
+                            <div class="project-1"><p>omikuji</p></div>
+                            <div class="project-2"><p>some other project</p></div>
+                        </div>
+                    </section>
+                    <section id="contact-me-page" class="active">
+                        <div><p>email</p></div>
+                        <div><p>phone</p></div>
+                        <div><p>linkedin</p></div>
+                    </section>
                 </main>
             </div>
         </div>
